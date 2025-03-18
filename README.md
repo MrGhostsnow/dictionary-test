@@ -1,48 +1,76 @@
-Dicionário de Palavras
-Este é um projeto de dicionário de palavras, onde os usuários podem buscar palavras, adicioná-las aos favoritos e visualizar seu histórico de buscas. O projeto inclui funcionalidades de registro e login de usuário utilizando AsyncStorage.
+# Dicionário de Palavras
 
-Tecnologias Usadas
-Linguagens: JavaScript/TypeScript
-Framework: React Native
-Armazenamento: AsyncStorage
-API: API fictícia de palavras
-Gerenciamento de Estado: React hooks (useState, useEffect)
-Como Instalar e Usar
-Pré-requisitos
-Node.js (v14 ou superior)
-NPM ou Yarn
-Expo CLI (para rodar o projeto React Native)
-Passos para Instalação
-Clone o repositório para sua máquina:
+Este é um projeto de **dicionário de palavras** onde os usuários podem buscar palavras, adicionar aos favoritos, e visualizar o histórico de suas buscas. O projeto também implementa funcionalidades de persistência de dados utilizando o **AsyncStorage**.
 
-bash
-git clone https://github.com/seu-usuario/dicionario-de-palavras.git
+## Tecnologias Usadas
 
-Navegue até o diretório do projeto:
+- **Linguagens**: JavaScript, TypeScript
+- **Framework**: React Native
+- **Armazenamento Local**: AsyncStorage
+- **API de Busca de Palavras**: API fictícia para busca de palavras
+- **Gerenciamento de Estado**: React Hooks (`useState`, `useEffect`)
+- **Outros**: Axios para requisições HTTP
 
-bash
-cd dicionario-de-palavras
+## Funcionalidades
+- **Favoritos**: O usuário pode adicionar palavras aos favoritos, que são armazenados no dispositivo.
+- **Persistência de Dados**: Utiliza o **AsyncStorage** para armazenar dados localmente (usuário, favoritos e histórico de buscas).
+- **API de Busca de Palavras**: Implementação fictícia de uma API para buscar palavras.
 
-Instale as dependências:
-Com o npm:
+## Tecnologias e Dependências
 
-bash
-npm install
+- **React Native**: Framework para construir aplicações móveis.
+- **AsyncStorage**: Para persistência local de dados (usuário, favoritos e histórico).
+- **Axios**: Para realizar requisições HTTP.
+- **React Navigation**: Para navegação entre as telas da aplicação.
 
-Ou com o yarn:
+## Instalação
 
-bash
-yarn install
+### Pré-requisitos
 
-Execute o projeto usando o Expo:
+Antes de começar, verifique se você tem as seguintes ferramentas instaladas em seu sistema:
 
-bash
-expo start
+- [Node.js](https://nodejs.org/) (v14 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) (para rodar o projeto React Native)
 
-Isso abrirá uma página no navegador onde você pode escanear o QR code com o aplicativo Expo Go ou executar o aplicativo diretamente no seu emulador.
+### Passos para Instalação
 
-Funcionalidades
-Favoritos: Adicione palavras aos favoritos.
-Busca: Digite a palavra que deseja encontrar no dicionario
-Listagem: Lista de palavras
-Persistência: Dados do usuário, favoritos e histórico são armazenados no AsyncStorage.
+1. **Clone o repositório**:
+
+   Abra o terminal e execute o seguinte comando para clonar o repositório:
+
+   ```bash
+   git clone https://github.com/MrGhostsnow/mobile-challenge-codash
+   
+2. **Navegue até o diretório do projeto:**:
+
+   Depois de clonar, entre na pasta do projeto:
+
+   ```bash
+   cd mobile-challenge-codash
+
+3. **Instale as dependências:**:
+
+   Com o npm:
+
+   ```bash
+   npm install
+
+4. **Inicie o servidor do Expo:**:
+
+   Para iniciar o projeto e ver a aplicação no seu dispositivo ou no emulador, use o comando:
+
+   ```bash
+   npx expo start
+
+### Descrição de cada diretório/arquivo:
+
+- **/assets**: Contém imagens e outros recursos estáticos utilizados na aplicação.
+- **/components**: Componentes reutilizáveis, como cartões de palavras e usuários.
+- **/screens**: Contém as telas principais da aplicação, como a tela de dicionário, login e perfil.
+- **/storage**: Funções para armazenar dados localmente usando o `AsyncStorage`, como favoritos e informações do usuário.
+- **App.tsx**: O arquivo principal onde a navegação e o fluxo inicial da aplicação são configurados.
+- **package.json**: Contém informações sobre o projeto e as dependências utilizadas.
+- **tsconfig.json**: Arquivo de configuração do TypeScript para garantir o correto funcionamento da tipagem.
+
+>  This is a challenge by [Coodesh](https://coodesh.com/)
